@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="../img/3.png"  alt="VIVAZLOSDIAZ">  <h1>VIVAZ LOS DIAZ</h1>
+    
+        <nav class="nav">
+                <!-- Listas desordenadas -->
+                    <!-- Enlaces Relativos -->
+            <ul class="nav__menu">
+                <li class="nav__links"><a href="../index.html" class="espacio">Inicio</a></li>
+                <li class="nav__links"><a href="nosotros.html" class="espacio">Nosotros</a></li>
+                <li class="nav__links"><a href="podcast.html"class="espacio">Podcast</a></li>
+                <li class="nav__links"><a href="productos.html"class="espacio">Productos</a></li>
+                <li class="nav__links"><a href="contacto.html"class="espacio">Contacto</a></li>
+                <li class="nav__links"><a href="galeria.html"class="espacio">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="titulo__temas">ESCRIBENOS</h1>
+    </section>
+        <!-- Practicando Formularios -->
+    <section class="secPagContactos">
+        <form action="servidor.php" method="post">
+            <legend></legend>
+    
+            <section>
+                <label for="nombre">NOMBRE</label>
+                <input type="text" name="" placeholder="escribe tu nombre" required><br>
+                <label for="nombre">APELLIDO</label>
+                <input type="text" name="Apellido" placeholder="escribe tu Apellido" required><br>
+                <label for="nombre">EMAIL</label>
+                <input type="email" name="email" placeholder="usuario@servidor.com" required><br>
+                <label for="password">PASWORD</label>
+                <input type="password" name="pasword" placeholder="pasword" required><br>
+                <label for="Telefono">TELEFONO</label>
+                <input type="tel" name="Telefono" placeholder="55-555-555-55" required><br>
+                <label for="password">PASSWORD</label>
+                <input type="password" name="pasword" placeholder="pasword" required><br>
+            </section>
+    <!-- Controles de Selección -->
+            <section>
+                <div>Sexo</div>
+                <label for="sexo">Mujer</label>
+                <input type="radio" name="sexo" value="Mujer">
+                <label for="sexo">Hombre</label>
+                <input type="radio" name="sexo" value="Hombre"><br>
+                <div>Temas de Interes</div>
+                <label for="lenguajes">Fianzas</label>
+                <input type="checkbox" name="Lenguajes" value="html5">
+                <label for="lenguajes">Parejas</label>
+                <input type="checkbox" name="Lenguajes" value="css">
+                <label for="lenguajes">Emprendimiento</label>
+                <input type="checkbox" name="Lenguajes" value="javascript"><br>
+            </section>
+
+              <!-- Menu Desplegable -->
+            <h3>Productos de tu Interes</h3>
+            <select name="talleres" id="talleres">
+                <option value="l">Selecciona</option>
+                <option value="l">Talleres</option>        
+                <option value="c">Aceites</option>
+                <option value="xc">Recursos</option>
+              </select>
+              <!-- Comentatrio -->
+            <h3>COMENTARIOS</h3>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br>
+            
+            <!-- botones -->
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="borrar formulario">
+            <input type="button" value="Boton que no hace nada">
+        </form>
+    </section>
+
+    <footer>
+        <img src="../img/3.png" alt="">
+            Mapa del sitio http//vivaslosdiaz.com <br>
+                Derechos Reservado por VIVAZ LOS DIAZ<br>
+                Colaboradores: <br>  JOSE DAVID DIAZ GONZALEZ <br> CDERHOUSE <br>
+        <div>
+            <img src="../img/facebook.png" alt="">
+            <img src="../img/instagram.png" alt="">
+            <img src="../img/whatsapp.png" alt="">
+        </div>
+    
+    </footer>
+
+</body>
+</html>
